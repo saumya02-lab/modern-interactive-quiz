@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="quiz-container">
+
+    <div class="top-bar">
+
+        <div>
+            <h5>INTERACTIVE QUIZ</h5>
+            <h3 id="questionNo">Question 1 of 4</h3>
+        </div>
+
+        <div class="score-box">
+            Score <span id="liveScore">0</span>
+        </div>
+
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-fill"></div>
+    </div>
+
+    <div id="quiz-header">
+
+        <h2 id="question">
+            Question Text
+        </h2>
+
+        <ul>
+
+            <li>
+
+                <input type="radio" id="a" class="answer" name="answer">
+
+                <label for="a" id="a_text">
+
+                    <span class="option">A</span>
+
+                    Answer A
+
+                </label>
+
+            </li>
+
+            <li>
+
+                <input type="radio" id="b" class="answer" name="answer">
+
+                <label for="b" id="b_text">
+
+                    <span class="option">B</span>
+
+                    Answer B
+
+                </label>
+
+            </li>
+
+            <li>
+
+                <input type="radio" id="c" class="answer" name="answer">
+
+                <label for="c" id="c_text">
+
+                    <span class="option">C</span>
+
+                    Answer C
+
+                </label>
+
+            </li>
+
+            <li>
+
+                <input type="radio" id="d" class="answer" name="answer">
+
+                <label for="d" id="d_text">
+
+                    <span class="option">D</span>
+
+                    Answer D
+
+                </label>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <button id="submit">
+
+        Next Question →
+
+    </button>
+
+    <div id="score-container" class="hide">
+
+        <h2>Quiz Completed 🎉</h2>
+
+        <h3>Your Score</h3>
+
+        <h1 id="score"></h1>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
